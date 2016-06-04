@@ -4,13 +4,13 @@
     {
         private string elNombreEnMayuscula;
         private string losApellidosFormateados;
-        string elProposito;
+        private string elProposito;
 
-        public CN(Solicitante elSolicitante, TipoDeCertificado elTipoDeCertificado)
+        public CN(Solicitante elSolicitante)
         {
             elNombreEnMayuscula = ObtengaElNombreEnMayusculas(elSolicitante);
             losApellidosFormateados = ObtengaLosApellidosFormateadosSinEspaciosAlFinal(elSolicitante);
-            elProposito = DetermineElProposito(elTipoDeCertificado);
+            elProposito = DetermineElProposito(elSolicitante);
         }
 
         private string ObtengaLosApellidosFormateadosSinEspaciosAlFinal(Solicitante elSolicitante)
@@ -24,9 +24,10 @@
             return elSolicitante.Nombre.ToUpper();
         }
 
-        private static string DetermineElProposito(TipoDeCertificado elTipoDeCertificado)
+        private static string DetermineElProposito(Solicitante elSolicitante)
         {
-            if (elTipoDeCertificado == TipoDeCertificado.DeFirma)
+            // Una sola operación
+            if (elSolicitante.TipoDeCertificado == TipoDeCertificado.DeFirma)
                 return "FIRMA";
             else
                 return "AUTENTICACION";

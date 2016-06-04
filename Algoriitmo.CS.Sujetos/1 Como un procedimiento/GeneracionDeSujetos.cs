@@ -43,7 +43,7 @@
             elC = "C=CR";
 
             string elGivenName;
-            elGivenName = "GivenName=" + elNombreEnMayuscula;
+            elGivenName = $"GivenName={elNombreEnMayuscula}";
 
             string elSurname;
             elSurname = $"Surname={losApellidosFormateadosSinEspaciosAlFinal}";

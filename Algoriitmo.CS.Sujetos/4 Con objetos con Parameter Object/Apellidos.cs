@@ -6,7 +6,7 @@
 
         public Apellidos(Solicitante elSolicitante)
         {
-            // Demeter
+            // Una sola operación
             losApellidos = $"{elSolicitante.PrimerApellido} {elSolicitante.SegundoApellido}";
         }
 

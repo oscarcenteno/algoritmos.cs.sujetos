@@ -10,9 +10,9 @@
         string elGivenName;
         string elSerialNumber;
 
-        public Sujeto(Solicitante elSolicitante, TipoDeCertificado elTipoDeCertificado)
+        public Sujeto(Solicitante elSolicitante)
         {
-            elCN = ObtengaElCN(elSolicitante, elTipoDeCertificado);
+            elCN = ObtengaElCN(elSolicitante);
             elOU = ObtengaElOU(elSolicitante);
             elO = FormateeElO();
             elC = FormateeElC();
@@ -21,9 +21,9 @@
             elSerialNumber = ObtengaElSerialNumber(elSolicitante);
         }
 
-        private static string ObtengaElCN(Solicitante elSolicitante, TipoDeCertificado elTipoDeCertificado)
+        private static string ObtengaElCN(Solicitante elSolicitante)
         {
-            return new CN(elSolicitante, elTipoDeCertificado).Formateado();
+            return new CN(elSolicitante).Formateado();
         }
 
         public string Formateado()
@@ -33,7 +33,7 @@
 
         private static string ObtengaElOU(Solicitante elSolicitante)
         {
-            // Demeter
+            // Una sola operación
             if (elSolicitante.TipoDeIdentificacion == TipoDeIdentificacion.Cedula)
                 return FormateeElOUParaUnNacional();
             else
@@ -77,7 +77,7 @@
 
         private static string ObtengaElSerialNumber(Solicitante elSolicitante)
         {
-            // Demeter
+            // Una sola operación
             if (elSolicitante.TipoDeIdentificacion == TipoDeIdentificacion.Cedula)
                 return FormateeElSerialNumberParaUnNacional(elSolicitante);
             else
@@ -86,13 +86,13 @@
 
         private static string FormateeElSerialNumberParaUnNacional(Solicitante elSolicitante)
         {
-            // Demeter
+            // Una sola operación
             return $"SERIALNUMBER=CPF-{elSolicitante.Identificacion}";
         }
 
         private static string FormateeElNumeroDeSerieParaUnExtranjero(Solicitante elSolicitante)
         {
-            // Demeter
+            // Una sola operación
             return $"SERIALNUMBER=NUP-{elSolicitante.Identificacion}";
         }
     }
