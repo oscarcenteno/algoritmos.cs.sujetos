@@ -52,6 +52,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="4 Con parameter object\ApellidosEnMayusculas\ComoTexto_Tests.cs" />
+    <Compile Include="4 Con parameter object\ApellidosFormateados\ComoTexto_Tests.cs" />
+    <Compile Include="4 Con parameter object\CN\ComoTexto_Tests.cs" />
+    <Compile Include="4 Con parameter object\GeneracionDeSujetos\GenereUnSujeto_Tests.cs" />
+    <Compile Include="4 Con parameter object\SujetoFormateado\ComoTexto_Tests.cs" />
+    <Compile Include="4 Con parameter object\Sujeto\ComoTexto_Tests.cs" />
     <Compile Include="3 Con objetos\Sujeto\ComoTexto_Tests.cs" />
     <Compile Include="3 Con objetos\SujetoFormateado\ComoTexto_Tests.cs" />
     <Compile Include="3 Con objetos\CN\ComoTexto_Tests.cs" />

@@ -40,6 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="4 Con parameter object\ApellidosEnMayusculas.cs" />
+    <Compile Include="4 Con parameter object\ApellidosFormateados.cs" />
+    <Compile Include="4 Con parameter object\CN.cs" />
+    <Compile Include="4 Con parameter object\GeneracionDeSujetos.cs" />
+    <Compile Include="4 Con parameter object\InformacionDelSolicitante.cs" />
+    <Compile Include="4 Con parameter object\InformacionFormateada.cs" />
+    <Compile Include="4 Con parameter object\Sujeto.cs" />
+    <Compile Include="4 Con parameter object\SujetoFormateado.cs" />
+    <Compile Include="4 Con parameter object\TipoDeCertificado.cs" />
+    <Compile Include="4 Con parameter object\TipoDeIdentificacion.cs" />
     <Compile Include="3 Con objetos\ApellidosEnMayusculas.cs" />
     <Compile Include="3 Con objetos\ApellidosFormateados.cs" />
     <Compile Include="3 Con objetos\CN.cs" />
