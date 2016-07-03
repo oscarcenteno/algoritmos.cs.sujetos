@@ -40,6 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="5 Con tell dont ask\ApellidosEnMayusculas.cs" />
+    <Compile Include="5 Con tell dont ask\ApellidosFormateados.cs" />
+    <Compile Include="5 Con tell dont ask\CN.cs" />
+    <Compile Include="5 Con tell dont ask\GeneracionDeSujetos.cs" />
+    <Compile Include="5 Con tell dont ask\InformacionDelSolicitante.cs" />
+    <Compile Include="5 Con tell dont ask\InformacionFormateada.cs" />
+    <Compile Include="5 Con tell dont ask\Sujeto.cs" />
+    <Compile Include="5 Con tell dont ask\SujetoFormateado.cs" />
+    <Compile Include="5 Con tell dont ask\TipoDeCertificado.cs" />
+    <Compile Include="5 Con tell dont ask\TipoDeIdentificacion.cs" />
     <Compile Include="4 Con parameter object\ApellidosEnMayusculas.cs" />
     <Compile Include="4 Con parameter object\ApellidosFormateados.cs" />
     <Compile Include="4 Con parameter object\CN.cs" />
