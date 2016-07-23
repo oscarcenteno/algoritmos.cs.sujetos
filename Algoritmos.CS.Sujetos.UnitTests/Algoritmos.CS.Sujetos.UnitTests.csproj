@@ -52,6 +52,12 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="6 Con polimorfismo\ApellidosEnMayusculas\ComoTexto_Tests.cs" />
+    <Compile Include="6 Con polimorfismo\ApellidosFormateados\ComoTexto_Tests.cs" />
+    <Compile Include="6 Con polimorfismo\CN\ComoTexto_Tests.cs" />
+    <Compile Include="6 Con polimorfismo\GeneracionDeSujetos\GenereUnSujeto_Tests.cs" />
+    <Compile Include="6 Con polimorfismo\SujetoFormateado\ComoTexto_Tests.cs" />
+    <Compile Include="6 Con polimorfismo\Sujeto\ComoTexto_Tests.cs" />
     <Compile Include="5 Con tell donk ask\ApellidosEnMayusculas\ComoTexto_Tests.cs" />
     <Compile Include="5 Con tell donk ask\ApellidosFormateados\ComoTexto_Tests.cs" />
     <Compile Include="5 Con tell donk ask\CN\ComoTexto_Tests.cs" />

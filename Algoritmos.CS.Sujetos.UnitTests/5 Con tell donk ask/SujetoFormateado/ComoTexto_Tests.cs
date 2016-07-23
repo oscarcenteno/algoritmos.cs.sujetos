@@ -8,9 +8,6 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests.SujetoFormateado_
     {
         private string elResultadoEsperado;
         private string elResultadoObtenido;
-        private TipoDeCertificado elTipoDeCertificado;
-        private TipoDeIdentificacion elTipoDeIdentificacion;
-        private string laIdentificacion;
         private InformacionFormateada laInformacion;
 
         [TestMethod]

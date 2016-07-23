@@ -40,6 +40,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="6 Con polimorfismo\ApellidosEnMayusculas.cs" />
+    <Compile Include="6 Con polimorfismo\ApellidosFormateados.cs" />
+    <Compile Include="6 Con polimorfismo\CN.cs" />
+    <Compile Include="6 Con polimorfismo\GeneracionDeSujetos.cs" />
+    <Compile Include="6 Con polimorfismo\InformacionDelSolicitante.cs" />
+    <Compile Include="6 Con polimorfismo\InformacionFormateada.cs" />
+    <Compile Include="6 Con polimorfismo\Sujeto.cs" />
+    <Compile Include="6 Con polimorfismo\SujetoFormateado.cs" />
+    <Compile Include="6 Con polimorfismo\TipoDeCertificado.cs" />
+    <Compile Include="6 Con polimorfismo\TipoDeIdentificacion.cs" />
     <Compile Include="5 Con tell dont ask\ApellidosEnMayusculas.cs" />
     <Compile Include="5 Con tell dont ask\ApellidosFormateados.cs" />
     <Compile Include="5 Con tell dont ask\CN.cs" />

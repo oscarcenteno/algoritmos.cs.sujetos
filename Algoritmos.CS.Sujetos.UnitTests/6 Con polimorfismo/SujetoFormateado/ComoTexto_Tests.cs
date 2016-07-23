@@ -1,7 +1,7 @@
-﻿using ConParameterObject;
+﻿using ConTellDontAsk;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Algoritmos.CS.Sujetos.UnitTests.ConParameterObject_Tests.SujetoFormateado_Tests
+namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests.SujetoFormateado_Tests
 {
     [TestClass]
     public class ComoTexto_Tests
