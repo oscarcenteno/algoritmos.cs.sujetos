@@ -44,12 +44,15 @@
     <Compile Include="6 Con polimorfismo\ApellidosFormateados.cs" />
     <Compile Include="6 Con polimorfismo\CN.cs" />
     <Compile Include="6 Con polimorfismo\GeneracionDeSujetos.cs" />
-    <Compile Include="6 Con polimorfismo\InformacionDelSolicitante.cs" />
-    <Compile Include="6 Con polimorfismo\InformacionFormateada.cs" />
-    <Compile Include="6 Con polimorfismo\Sujeto.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionDelSolicitante.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionExtranjera.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionFormateada.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionNacional.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionExtranjeraDeAutenticacion.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionNacionalDeAutenticacion.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionExtranjeraDeFirma.cs" />
+    <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionNacionalDeFirma.cs" />
     <Compile Include="6 Con polimorfismo\SujetoFormateado.cs" />
-    <Compile Include="6 Con polimorfismo\TipoDeCertificado.cs" />
-    <Compile Include="6 Con polimorfismo\TipoDeIdentificacion.cs" />
     <Compile Include="5 Con tell dont ask\ApellidosEnMayusculas.cs" />
     <Compile Include="5 Con tell dont ask\ApellidosFormateados.cs" />
     <Compile Include="5 Con tell dont ask\CN.cs" />
@@ -85,6 +88,9 @@
     <Compile Include="1 Como un procedimiento\TipoDeCertificado.cs" />
     <Compile Include="1 Como un procedimiento\TipoDeIdentificacion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="6 Con polimorfismo\Parameter Objects\HerenciaDeParameterObjects.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

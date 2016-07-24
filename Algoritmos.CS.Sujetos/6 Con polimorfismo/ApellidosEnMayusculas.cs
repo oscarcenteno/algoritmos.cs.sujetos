@@ -6,7 +6,7 @@
 
         public ApellidosEnMayusculas(InformacionDelSolicitante laInformacion)
         {
-            losApellidos = laInformacion.ApellidosEnMayusculas;
+            losApellidos = laInformacion.ApellidosUnidos;
         }
 
         public string ComoTexto()

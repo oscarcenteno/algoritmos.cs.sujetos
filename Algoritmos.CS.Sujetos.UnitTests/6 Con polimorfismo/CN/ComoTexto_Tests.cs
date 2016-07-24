@@ -1,4 +1,4 @@
-﻿using ConTellDontAsk;
+﻿using ConPolimorfismo;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo.CN_Tests
@@ -15,10 +15,10 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo.CN_Tests
         {
             elResultadoEsperado = "CN=MARCELINO NAVARRO QUIROS (AUTENTICACION)";
 
-            laInformacion = new InformacionFormateada();
-            laInformacion.TipoDeCertificado = TipoDeCertificado.Autenticacion;
-            laInformacion.NombreEnMayuscula = "MARCELINO";
-            laInformacion.ApellidosFormateados = "NAVARRO QUIROS";
+            laInformacion = new InformacionNacionalDeAutenticacion();
+            laInformacion.Nombre = "MARCELINO";
+            laInformacion.PrimerApellido = "NAVARRO";
+            laInformacion.SegundoApellido = "QUIROS";
             elResultadoObtenido = new CN(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
@@ -29,10 +29,10 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo.CN_Tests
         {
             elResultadoEsperado = "CN=MARCELINO NAVARRO QUIROS (FIRMA)";
 
-            laInformacion = new InformacionFormateada();
-            laInformacion.TipoDeCertificado = TipoDeCertificado.Firma;
-            laInformacion.NombreEnMayuscula = "MARCELINO";
-            laInformacion.ApellidosFormateados = "NAVARRO QUIROS";
+            laInformacion = new InformacionNacionalDeFirma();
+            laInformacion.Nombre = "MARCELINO";
+            laInformacion.PrimerApellido = "NAVARRO";
+            laInformacion.SegundoApellido = "QUIROS";
             elResultadoObtenido = new CN(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);

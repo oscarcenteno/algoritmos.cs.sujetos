@@ -1,4 +1,4 @@
-﻿using ConTellDontAsk;
+﻿using ConPolimorfismo;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests.SujetoFormateado_Tests
@@ -15,12 +15,11 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests.SujetoFormateado
         {
             elResultadoEsperado = "CN=MARCELINO NAVARRO QUIROS (AUTENTICACION), OU=CIUDADANO, O=PERSONA FISICA, C=CR, GivenName=MARCELINO, Surname=NAVARRO QUIROS, SERIALNUMBER=CPF-01-0078-5935";
 
-            laInformacion = new InformacionFormateada();
+            laInformacion = new InformacionNacionalDeAutenticacion();
             laInformacion.Identificacion = "01-0078-5935";
-            laInformacion.TipoDeIdentificacion = TipoDeIdentificacion.Cedula;
-            laInformacion.TipoDeCertificado = TipoDeCertificado.Autenticacion;
-            laInformacion.NombreEnMayuscula = "MARCELINO";
-            laInformacion.ApellidosFormateados = "NAVARRO QUIROS";
+            laInformacion.Nombre = "MARCELINO";
+            laInformacion.PrimerApellido = "NAVARRO";
+            laInformacion.SegundoApellido = "QUIROS";
             elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
@@ -31,12 +30,11 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests.SujetoFormateado
         {
             elResultadoEsperado = "CN=JOSE MIGUEL SUAREZ GODINEZ (AUTENTICACION), OU=EXTRANJERO, O=PERSONA FISICA, C=CR, GivenName=JOSE MIGUEL, Surname=SUAREZ GODINEZ, SERIALNUMBER=NUP-114145540011";
 
-            laInformacion = new InformacionFormateada();
+            laInformacion = new InformacionExtranjeraDeAutenticacion();
             laInformacion.Identificacion = "114145540011";
-            laInformacion.TipoDeIdentificacion = TipoDeIdentificacion.Dimex;
-            laInformacion.TipoDeCertificado = TipoDeCertificado.Autenticacion;
-            laInformacion.NombreEnMayuscula = "JOSE MIGUEL";
-            laInformacion.ApellidosFormateados = "SUAREZ GODINEZ";
+            laInformacion.Nombre = "JOSE MIGUEL";
+            laInformacion.PrimerApellido = "SUAREZ";
+            laInformacion.SegundoApellido = "GODINEZ";
             elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);

@@ -1,4 +1,4 @@
-﻿using ConTellDontAsk;
+﻿using ConPolimorfismo;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo.ApellidosEnMayusculas_Tests

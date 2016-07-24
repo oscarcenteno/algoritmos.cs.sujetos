@@ -2,9 +2,9 @@
 {
     public static class GeneracionDeSujetos
     {
-        public static string GenereElSujeto(InformacionDelSolicitante laInformacion)
+        public static string GenereElSujeto(InformacionFormateada laInformacion)
         {
-            return new Sujeto(laInformacion).ComoTexto();
+            return new SujetoFormateado(laInformacion).ComoTexto();
         }
     }
 }
