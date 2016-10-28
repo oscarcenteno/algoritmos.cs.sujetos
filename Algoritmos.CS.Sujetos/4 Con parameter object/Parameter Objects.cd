@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ConParameterObject.InformacionDelSolicitante">
+    <Position X="1.25" Y="1" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAoAAAAAAAAAAAAAAAoAAAAAAAEAAAAAAAAAAAQAA=</HashCode>
+      <FileName>4 Con parameter object\InformacionDelSolicitante.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ConParameterObject.InformacionFormateada">
+    <Position X="1.25" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>ACAAoAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAgAAAAAA=</HashCode>
+      <FileName>4 Con parameter object\InformacionFormateada.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Tahoma" Size="8.25" />
+</ClassDiagram>

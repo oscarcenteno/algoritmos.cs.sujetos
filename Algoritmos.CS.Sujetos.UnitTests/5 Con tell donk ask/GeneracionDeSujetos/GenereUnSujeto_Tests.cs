@@ -22,7 +22,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests
             laInformacion.PrimerApellido = "Navarro";
             laInformacion.SegundoApellido = "Quiros";
             laInformacion.TipoDeCertificado = TipoDeCertificado.Autenticacion;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new Sujeto(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -39,7 +39,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests
             laInformacion.PrimerApellido = "Navarro";
             laInformacion.SegundoApellido = "Quiros";
             laInformacion.TipoDeCertificado = TipoDeCertificado.Firma;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new Sujeto(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -56,7 +56,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests
             laInformacion.PrimerApellido = "Suarez";
             laInformacion.SegundoApellido = "Godinez";
             laInformacion.TipoDeCertificado = TipoDeCertificado.Autenticacion;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new Sujeto(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -73,7 +73,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests
             laInformacion.PrimerApellido = "Suarez";
             laInformacion.SegundoApellido = "Godinez";
             laInformacion.TipoDeCertificado = TipoDeCertificado.Firma;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new Sujeto(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -90,7 +90,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests
             laInformacion.PrimerApellido = "Smith";
             laInformacion.SegundoApellido = "";
             laInformacion.TipoDeCertificado = TipoDeCertificado.Autenticacion;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new Sujeto(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -107,7 +107,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConTellDontAsk_Tests
             laInformacion.PrimerApellido = "Smith";
             laInformacion.SegundoApellido = "";
             laInformacion.TipoDeCertificado = TipoDeCertificado.Firma;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new Sujeto(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }

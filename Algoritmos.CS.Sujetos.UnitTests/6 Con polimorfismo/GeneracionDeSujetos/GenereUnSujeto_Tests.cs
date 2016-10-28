@@ -20,7 +20,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests
             laInformacion.Nombre = "Marcelino";
             laInformacion.PrimerApellido = "Navarro";
             laInformacion.SegundoApellido = "Quiros";
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -35,7 +35,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests
             laInformacion.Nombre = "Marcelino";
             laInformacion.PrimerApellido = "Navarro";
             laInformacion.SegundoApellido = "Quiros";
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -50,7 +50,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests
             laInformacion.Nombre = "Jose Miguel";
             laInformacion.PrimerApellido = "Suarez";
             laInformacion.SegundoApellido = "Godinez";
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -65,7 +65,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests
             laInformacion.Nombre = "Jose Miguel";
             laInformacion.PrimerApellido = "Suarez";
             laInformacion.SegundoApellido = "Godinez";
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -80,7 +80,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests
             laInformacion.Nombre = "John";
             laInformacion.PrimerApellido = "Smith";
             laInformacion.SegundoApellido = "";
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -95,7 +95,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo_Tests
             laInformacion.Nombre = "John";
             laInformacion.PrimerApellido = "Smith";
             laInformacion.SegundoApellido = "";
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laInformacion);
+            elResultadoObtenido = new SujetoFormateado(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }

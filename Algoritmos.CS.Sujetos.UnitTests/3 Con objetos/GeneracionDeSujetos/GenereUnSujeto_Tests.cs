@@ -11,7 +11,7 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
         private string elResultadoEsperado;
         private string elResultadoObtenido;
         private string elSegundoApellido;
-        private TipoDeIdentificacion elTipDeIdentificacion;
+        private TipoDeIdentificacion elTipoDeIdentificacion;
         private TipoDeCertificado elTipoDeCertificado;
         private string laIdentificacion;
 
@@ -21,18 +21,18 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
             elResultadoEsperado = "CN=MARCELINO NAVARRO QUIROS (AUTENTICACION), OU=CIUDADANO, O=PERSONA FISICA, C=CR, GivenName=MARCELINO, Surname=NAVARRO QUIROS, SERIALNUMBER=CPF-01-0078-5935";
 
             laIdentificacion = "01-0078-5935";
-            elTipDeIdentificacion = TipoDeIdentificacion.Cedula;
+            elTipoDeIdentificacion = TipoDeIdentificacion.Cedula;
             elNombre = "Marcelino";
             elPrimerApellido = "Navarro";
             elSegundoApellido = "Quiros";
             elTipoDeCertificado = TipoDeCertificado.Autenticacion;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laIdentificacion,
-                elTipDeIdentificacion,
+            elResultadoObtenido = new Sujeto(laIdentificacion,
+                elTipoDeIdentificacion,
                 elNombre,
                 elPrimerApellido,
                 elSegundoApellido,
                 elTipoDeCertificado
-                );
+                ).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -43,18 +43,18 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
             elResultadoEsperado = "CN=MARCELINO NAVARRO QUIROS (FIRMA), OU=CIUDADANO, O=PERSONA FISICA, C=CR, GivenName=MARCELINO, Surname=NAVARRO QUIROS, SERIALNUMBER=CPF-01-0078-5935";
 
             laIdentificacion = "01-0078-5935";
-            elTipDeIdentificacion = TipoDeIdentificacion.Cedula;
+            elTipoDeIdentificacion = TipoDeIdentificacion.Cedula;
             elNombre = "Marcelino";
             elPrimerApellido = "Navarro";
             elSegundoApellido = "Quiros";
             elTipoDeCertificado = TipoDeCertificado.Firma;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laIdentificacion,
-                elTipDeIdentificacion,
+            elResultadoObtenido = new Sujeto(laIdentificacion,
+                elTipoDeIdentificacion,
                 elNombre,
                 elPrimerApellido,
                 elSegundoApellido,
                 elTipoDeCertificado
-                );
+                ).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -65,18 +65,18 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
             elResultadoEsperado = "CN=JOSE MIGUEL SUAREZ GODINEZ (AUTENTICACION), OU=EXTRANJERO, O=PERSONA FISICA, C=CR, GivenName=JOSE MIGUEL, Surname=SUAREZ GODINEZ, SERIALNUMBER=NUP-114145540011";
 
             laIdentificacion = "114145540011";
-            elTipDeIdentificacion = TipoDeIdentificacion.Dimex;
+            elTipoDeIdentificacion = TipoDeIdentificacion.Dimex;
             elNombre = "Jose Miguel";
             elPrimerApellido = "Suarez";
             elSegundoApellido = "Godinez";
             elTipoDeCertificado = TipoDeCertificado.Autenticacion;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laIdentificacion,
-                elTipDeIdentificacion,
+            elResultadoObtenido = new Sujeto(laIdentificacion,
+                elTipoDeIdentificacion,
                 elNombre,
                 elPrimerApellido,
                 elSegundoApellido,
                 elTipoDeCertificado
-                );
+                ).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -87,18 +87,18 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
             elResultadoEsperado = "CN=JOSE MIGUEL SUAREZ GODINEZ (FIRMA), OU=EXTRANJERO, O=PERSONA FISICA, C=CR, GivenName=JOSE MIGUEL, Surname=SUAREZ GODINEZ, SERIALNUMBER=NUP-114145540011";
 
             laIdentificacion = "114145540011";
-            elTipDeIdentificacion = TipoDeIdentificacion.Dimex;
+            elTipoDeIdentificacion = TipoDeIdentificacion.Dimex;
             elNombre = "Jose Miguel";
             elPrimerApellido = "Suarez";
             elSegundoApellido = "Godinez";
             elTipoDeCertificado = TipoDeCertificado.Firma;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laIdentificacion,
-                elTipDeIdentificacion,
+            elResultadoObtenido = new Sujeto(laIdentificacion,
+                elTipoDeIdentificacion,
                 elNombre,
                 elPrimerApellido,
                 elSegundoApellido,
                 elTipoDeCertificado
-                );
+                ).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -109,18 +109,18 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
             elResultadoEsperado = "CN=JOHN SMITH (AUTENTICACION), OU=EXTRANJERO, O=PERSONA FISICA, C=CR, GivenName=JOHN, Surname=SMITH, SERIALNUMBER=NUP-114145540011";
 
             laIdentificacion = "114145540011";
-            elTipDeIdentificacion = TipoDeIdentificacion.Didi;
+            elTipoDeIdentificacion = TipoDeIdentificacion.Didi;
             elNombre = "John";
             elPrimerApellido = "Smith";
             elSegundoApellido = "";
             elTipoDeCertificado = TipoDeCertificado.Autenticacion;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laIdentificacion,
-                elTipDeIdentificacion,
+            elResultadoObtenido = new Sujeto(laIdentificacion,
+                elTipoDeIdentificacion,
                 elNombre,
                 elPrimerApellido,
                 elSegundoApellido,
                 elTipoDeCertificado
-                );
+                ).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
@@ -131,22 +131,20 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConObjetos_Tests
             elResultadoEsperado = "CN=JOHN SMITH (FIRMA), OU=EXTRANJERO, O=PERSONA FISICA, C=CR, GivenName=JOHN, Surname=SMITH, SERIALNUMBER=NUP-114145540011";
 
             laIdentificacion = "114145540011";
-            elTipDeIdentificacion = TipoDeIdentificacion.Didi;
+            elTipoDeIdentificacion = TipoDeIdentificacion.Didi;
             elNombre = "John";
             elPrimerApellido = "Smith";
             elSegundoApellido = "";
             elTipoDeCertificado = TipoDeCertificado.Firma;
-            elResultadoObtenido = GeneracionDeSujetos.GenereElSujeto(laIdentificacion,
-                elTipDeIdentificacion,
+            elResultadoObtenido = new Sujeto(laIdentificacion,
+                elTipoDeIdentificacion,
                 elNombre,
                 elPrimerApellido,
                 elSegundoApellido,
                 elTipoDeCertificado
-                );
+                ).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
         }
-
-
     }
 }

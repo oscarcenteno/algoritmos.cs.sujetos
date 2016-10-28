@@ -43,7 +43,6 @@
     <Compile Include="6 Con polimorfismo\ApellidosEnMayusculas.cs" />
     <Compile Include="6 Con polimorfismo\ApellidosFormateados.cs" />
     <Compile Include="6 Con polimorfismo\CN.cs" />
-    <Compile Include="6 Con polimorfismo\GeneracionDeSujetos.cs" />
     <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionDelSolicitante.cs" />
     <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionExtranjera.cs" />
     <Compile Include="6 Con polimorfismo\Parameter Objects\InformacionFormateada.cs" />
@@ -56,7 +55,6 @@
     <Compile Include="5 Con tell dont ask\ApellidosEnMayusculas.cs" />
     <Compile Include="5 Con tell dont ask\ApellidosFormateados.cs" />
     <Compile Include="5 Con tell dont ask\CN.cs" />
-    <Compile Include="5 Con tell dont ask\GeneracionDeSujetos.cs" />
     <Compile Include="5 Con tell dont ask\InformacionDelSolicitante.cs" />
     <Compile Include="5 Con tell dont ask\InformacionFormateada.cs" />
     <Compile Include="5 Con tell dont ask\Sujeto.cs" />
@@ -66,7 +64,6 @@
     <Compile Include="4 Con parameter object\ApellidosEnMayusculas.cs" />
     <Compile Include="4 Con parameter object\ApellidosFormateados.cs" />
     <Compile Include="4 Con parameter object\CN.cs" />
-    <Compile Include="4 Con parameter object\GeneracionDeSujetos.cs" />
     <Compile Include="4 Con parameter object\InformacionDelSolicitante.cs" />
     <Compile Include="4 Con parameter object\InformacionFormateada.cs" />
     <Compile Include="4 Con parameter object\Sujeto.cs" />
@@ -76,7 +73,6 @@
     <Compile Include="3 Con objetos\ApellidosEnMayusculas.cs" />
     <Compile Include="3 Con objetos\ApellidosFormateados.cs" />
     <Compile Include="3 Con objetos\CN.cs" />
-    <Compile Include="3 Con objetos\GeneracionDeSujetos.cs" />
     <Compile Include="3 Con objetos\Sujeto.cs" />
     <Compile Include="3 Con objetos\SujetoFormateado.cs" />
     <Compile Include="3 Con objetos\TipoDeCertificado.cs" />
@@ -90,6 +86,12 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="3 Con objetos\Arbol de objetos.dgml" />
+    <None Include="4 Con parameter object\Arbol de objetos.dgml" />
+    <None Include="4 Con parameter object\Parameter Objects.cd" />
+    <None Include="5 Con tell dont ask\Arbol de objetos.dgml" />
+    <None Include="5 Con tell dont ask\Parameter Objects.cd" />
+    <None Include="6 Con polimorfismo\Arbol de objetos.dgml" />
     <None Include="6 Con polimorfismo\Parameter Objects\HerenciaDeParameterObjects.cd" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

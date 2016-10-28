@@ -15,12 +15,17 @@ namespace Algoritmos.CS.Sujetos.UnitTests.ConPolimorfismo.ApellidosEnMayusculas_
         {
             elResultadoEsperado = "GODINEZ SANCHEZ";
 
-            laInformacion = new InformacionDelSolicitante();
-            laInformacion.PrimerApellido = "Godinez";
-            laInformacion.SegundoApellido = "Sanchez";
+            InicialiceLaInformacion();
             elResultadoObtenido = new ApellidosEnMayusculas(laInformacion).ComoTexto();
 
             Assert.AreEqual(elResultadoEsperado, elResultadoObtenido);
+        }
+
+        private void InicialiceLaInformacion()
+        {
+            laInformacion = new InformacionDelSolicitante();
+            laInformacion.PrimerApellido = "Godinez";
+            laInformacion.SegundoApellido = "Sanchez";
         }
     }
 }
